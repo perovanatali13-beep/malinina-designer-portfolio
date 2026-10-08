@@ -904,3 +904,7 @@ body.lb-open { overflow: hidden; }
 }
 
 .p + .p { margin-top: 1rem; }
+
+/* обложка: статичный экран без прокрутки */
+.screen-static { height: clamp(22rem, 52vw, 40rem); overflow: hidden; }
+.screen-static img { width: 100%; height: auto; display: block; }
