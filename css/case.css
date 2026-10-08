@@ -750,3 +750,114 @@ body.case {
 .wire-scroll img { width: 100%; height: auto; display: block; }
 @media (max-width: 1000px) { .tile.s5, .tile.s7 { grid-column: span 12; } }
 .tile:has(.wire-scroll) .p, .concept-card .p { margin-top: 0; }
+
+/* ── ZOOM + LIGHTBOX ── */
+.zoom { position: relative; }
+.zoom img { cursor: zoom-in; }
+
+.zoom-btn {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  border: none;
+  background: var(--brand);
+  color: var(--brand-ink);
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 10px 24px -8px rgba(0,0,0,0.45);
+  transition: transform 0.2s, background 0.2s;
+  z-index: 3;
+}
+
+.zoom-btn:hover { transform: scale(1.08); background: var(--accent); color: #fff; }
+.zoom-btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+/* статичное превью длинного скриншота: верхняя часть, без прокрутки */
+.shot {
+  overflow: hidden;
+  aspect-ratio: var(--ratio, 4 / 5);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.shot img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+.split-media.zoom .shot img, .split-media .shot img { box-shadow: none; border-radius: 0; }
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: rgba(15, 15, 15, 0.86);
+  backdrop-filter: blur(6px);
+  display: flex;
+}
+
+.lightbox[hidden] { display: none; }
+
+.lightbox-body {
+  flex: 1;
+  overflow: auto;
+  padding: clamp(3.5rem, 6vw, 5rem) clamp(0.75rem, 4vw, 4rem) 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.lightbox-body img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+}
+
+.lightbox-close {
+  position: fixed;
+  top: calc(env(safe-area-inset-top, 0px) + 1rem);
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  color: #111;
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2;
+}
+
+body.lb-open { overflow: hidden; }
+
+/* обложка с прокруткой внутри экрана */
+.screen-scroll { height: clamp(22rem, 52vw, 40rem); overflow-y: auto; scrollbar-width: thin; }
+.screen-scroll img { width: 100%; height: auto; display: block; }
+
+/* было / стало */
+.compare { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap); margin-top: 1.5rem; }
+.compare-col { border-radius: calc(var(--radius) - 10px); overflow: hidden; background: #fff; }
+.compare-label {
+  display: flex; justify-content: space-between; gap: 1rem;
+  padding: 0.85rem 1.2rem;
+  font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: #8a8a8a; border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.compare-label b { color: var(--accent); font-weight: 600; }
+.compare-col .shot { border-radius: 0; --ratio: 4 / 3; }
+.compare-row + .compare-row { margin-top: clamp(3rem, 6vw, 5rem); }
+.compare-notes { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap); margin-top: var(--gap); }
+.compare-notes .tile { min-height: 0; }
+
+@media (max-width: 1000px) {
+  .compare, .compare-notes { grid-template-columns: 1fr; }
+}
+.wire-shot { background: #F4F4F4; margin-bottom: 0.5rem; }
+.ba-col .zoom-btn, .compare-col .zoom-btn { bottom: 0.85rem; right: 0.85rem; }

@@ -33,7 +33,9 @@
     <ul class="nav-links">
       <li><a href="index.html#services">Услуги</a></li>
       <li><a href="index.html#portfolio">Портфолио</a></li>
+      <li><a href="index.html#process">Процесс</a></li>
       <li><a href="index.html#experience">Опыт</a></li>
+      <li><a href="index.html#skills">Навыки</a></li>
       <li><a href="index.html#contact">Контакты</a></li>
     </ul>
   </nav>
@@ -48,8 +50,8 @@
       <div class="chips"><span class="chip">#редизайн</span><span class="chip">#ux-аудит</span><span class="chip">#user-flow</span><span class="chip">#адаптив</span><span class="chip">#figma</span></div>
       <div class="cover-stage">
         <div class="browser">
-          <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">hottours.ru</span></div>
-          <img src="img/tours-desktop.webp" alt="Пять экранов десктопной версии">
+          <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">bankturov.ru</span></div>
+          <div class="screen-scroll"><img src="img/tours-home.webp" alt="Главная страница после редизайна — прокрутите внутри экрана"></div>
         </div>
         <div class="float-phone phone"><div class="phone-screen scroll"><img src="img/tours-m-home.webp" alt="Мобильная главная"></div></div>
       </div>
@@ -78,7 +80,7 @@
     <section class="slide slide--brand statement reveal">
       <p class="eyebrow">Проблема</p>
       <h2 class="h-l">Пользователь теряется по&nbsp;дороге к&nbsp;оплате</h2>
-      <p class="p">Поиск тонет среди баннеров, фильтры не помещаются в экран телефона, а на странице отеля сложно быстро сравнить условия. Человек закрывает вкладку и уходит к конкуренту.</p>
+      <p class="p">На текущем сайте выдача перегружена длинными текстовыми описаниями, фильтров мало, а на странице отеля условия и номера спрятаны под простынёй текста. Человек устаёт искать и уходит к конкуренту.</p>
     </section>
 
     <!-- AUDIT -->
@@ -86,18 +88,58 @@
       <p class="eyebrow">02 — UX-аудит</p>
       <h2 class="h-l">Где ломается сценарий</h2>
       <div class="bento">
-        <div class="tile"><p class="tile-num">01</p><p class="tile-t">Перегруженная главная</p><p class="p">Форма поиска теряется среди промо — непонятно, с чего начать.</p></div>
-        <div class="tile"><p class="tile-num">02</p><p class="tile-t">Фильтры-простыня</p><p class="p">Десятки параметров одним списком. На телефоне они закрывают выдачу.</p></div>
-        <div class="tile"><p class="tile-num">03</p><p class="tile-t">Нет уверенности</p><p class="p">Условия, номера и отзывы разбросаны по странице отеля.</p></div>
+        <div class="tile"><p class="tile-num">01</p><p class="tile-t">Главная из текстовых списков</p><p class="p">Направления — строками без фото, треть экрана занимают адреса офисов. Вдохновиться и выбрать сложно.</p></div>
+        <div class="tile"><p class="tile-num">02</p><p class="tile-t">Выдача-простыня</p><p class="p">Всего шесть фильтров, а в каждой карточке — длинный абзац «КРАТКО». Сравнить отели глазами почти невозможно.</p></div>
+        <div class="tile"><p class="tile-num">03</p><p class="tile-t">Отель без структуры</p><p class="p">Описание сплошным текстом и 12 аккордеонов. Номера и отзывы — далеко внизу страницы.</p></div>
         <div class="tile s12 tile--brand" style="min-height:0">
           <p class="tile-t" style="font-size:clamp(1.3rem,2.4vw,1.9rem);font-weight:500;line-height:1.35">Решение — <span class="hot">линейный путь</span>: один экран = один вопрос пользователя.</p>
         </div>
       </div>
     </section>
 
+    <!-- BEFORE / AFTER -->
+    <section class="slide slide--white reveal">
+      <p class="eyebrow">03 — Было и стало</p>
+      <h2 class="h-l">Исходный сайт и&nbsp;редизайн</h2>
+      <p class="p" style="max-width:60ch;margin-top:1rem;margin-bottom:clamp(2.5rem,5vw,4rem)">Слева — текущий сайт bankturov.ru (скриншоты от 8 октября 2026), справа — моя версия тех же экранов. Нажмите «+», чтобы рассмотреть страницу целиком.</p>
+      <div class="compare-row">
+        <h3 class="h-m">Главная</h3>
+        <div class="compare">
+          <div class="compare-col"><div class="compare-label"><span>Было</span><span>bankturov.ru</span></div><div class="shot zoom"><img src="img/orig-home.webp" alt="Главная bankturov.ru до редизайна" loading="lazy"></div></div>
+          <div class="compare-col"><div class="compare-label"><b>Стало</b><span>редизайн</span></div><div class="shot zoom"><img src="img/tours-home.webp" alt="Главная после редизайна" loading="lazy"></div></div>
+        </div>
+        <div class="compare-notes">
+          <div class="tile"><p class="tile-t">Было</p><p class="p">Форма поиска в красной шапке, ниже — горящие направления текстовыми строками и колонка с адресами офисов.</p></div>
+          <div class="tile tile--brand"><p class="tile-t">Стало</p><p class="p">Поиск на фото первого экрана, подборки направлений и отелей карточками с фото и ценой, блог и акции — ниже.</p></div>
+        </div>
+      </div>
+      <div class="compare-row">
+        <h3 class="h-m">Выдача и фильтры</h3>
+        <div class="compare">
+          <div class="compare-col"><div class="compare-label"><span>Было</span><span>bankturov.ru</span></div><div class="shot zoom"><img src="img/orig-search.webp" alt="Выдача bankturov.ru до редизайна" loading="lazy"></div></div>
+          <div class="compare-col"><div class="compare-label"><b>Стало</b><span>редизайн</span></div><div class="shot zoom"><img src="img/tours-filters.webp" alt="Выдача с фильтрами после редизайна" loading="lazy"></div></div>
+        </div>
+        <div class="compare-notes">
+          <div class="tile"><p class="tile-t">Было</p><p class="p">Шесть фильтров, длинное описание «КРАТКО» в каждой карточке, баннер и реклама внутри выдачи.</p></div>
+          <div class="tile tile--brand"><p class="tile-t">Стало</p><p class="p">10 групп фильтров, карта рядом с выдачей, компактная карточка: фото, рейтинг, число отзывов, цена и кнопка «Выбрать».</p></div>
+        </div>
+      </div>
+      <div class="compare-row">
+        <h3 class="h-m">Страница отеля</h3>
+        <div class="compare">
+          <div class="compare-col"><div class="compare-label"><span>Было</span><span>bankturov.ru</span></div><div class="shot zoom"><img src="img/orig-hotel.webp" alt="Страница отеля bankturov.ru до редизайна" loading="lazy"></div></div>
+          <div class="compare-col"><div class="compare-label"><b>Стало</b><span>редизайн</span></div><div class="shot zoom"><img src="img/tours-hotel.webp" alt="Страница отеля после редизайна" loading="lazy"></div></div>
+        </div>
+        <div class="compare-notes">
+          <div class="tile"><p class="tile-t">Было</p><p class="p">Текстовое описание на весь экран, 12 свёрнутых разделов, номера и отзывы в самом низу, слева — офисы продаж.</p></div>
+          <div class="tile tile--brand"><p class="tile-t">Стало</p><p class="p">Ключевые условия под названием, удобства и время заезда отдельными блоками, номера карточками с ценой, отзывы с общей оценкой.</p></div>
+        </div>
+      </div>
+    </section>
+
     <!-- FLOW -->
     <section class="slide reveal">
-      <p class="eyebrow">03 — User flow</p>
+      <p class="eyebrow">04 — User flow</p>
       <h2 class="h-l">Пять шагов до отпуска</h2>
       <div class="scope" style="--steps:5">
         <div class="scope-step"><span class="scope-pill"><em>1</em>Поиск тура</span><p><b>Куда и когда?</b><br>Форма поиска и подборки</p></div>
@@ -108,14 +150,14 @@
       </div>
       <div style="margin-top:3rem;display:flex;justify-content:flex-end"><span class="badge"><b>1440</b>px frame</span></div>
       <div class="browser rounded" style="margin-top:1rem">
-        <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">hottours.ru</span></div>
+        <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">bankturov.ru</span></div>
         <img src="img/tours-desktop.webp" alt="Экраны сценария на десктопе" loading="lazy">
       </div>
     </section>
 
     <!-- SOLUTIONS -->
     <section class="slide reveal">
-      <p class="eyebrow">04 — Решения</p>
+      <p class="eyebrow">05 — Решения</p>
       <h2 class="h-l" style="margin-bottom:clamp(3rem,6vw,5rem)">Что изменилось на&nbsp;каждом шаге</h2>
 
       <div class="split">
@@ -129,7 +171,7 @@
             <li>Акции в конце — не мешают основному сценарию</li>
           </ul>
         </div>
-        <div class="split-media tall"><img src="img/tours-home.webp" alt="Главная" loading="lazy"></div>
+        <div class="split-media zoom"><div class="shot"><img src="img/tours-home.webp" alt="Главная" loading="lazy"></div></div>
       </div>
 
       <div class="split rev">
@@ -143,7 +185,7 @@
             <li>В карточке: рейтинг, число отзывов, цена</li>
           </ul>
         </div>
-        <div class="split-media tall"><img src="img/tours-filters.webp" alt="Выдача с фильтрами" loading="lazy"></div>
+        <div class="split-media zoom"><div class="shot"><img src="img/tours-filters.webp" alt="Выдача с фильтрами" loading="lazy"></div></div>
       </div>
 
       <div class="split">
@@ -157,7 +199,7 @@
             <li>Общая оценка и фото гостей в отзывах</li>
           </ul>
         </div>
-        <div class="split-media tall"><img src="img/tours-hotel.webp" alt="Страница отеля" loading="lazy"></div>
+        <div class="split-media zoom"><div class="shot"><img src="img/tours-hotel.webp" alt="Страница отеля" loading="lazy"></div></div>
       </div>
 
       <div class="split rev">
@@ -166,7 +208,7 @@
           <h3 class="h-m">Финальная проверка в одном экране</h3>
           <p class="p">Отель, даты, гости и условия — коротким резюме. Пользователь видит всё сразу и уверенно нажимает «Оплатить».</p>
         </div>
-        <div class="split-media"><img src="img/tours-booking.webp" alt="Подтверждение оплаты" loading="lazy"></div>
+        <div class="split-media zoom"><img src="img/tours-booking.webp" alt="Подтверждение оплаты" loading="lazy"></div>
       </div>
     </section>
 
@@ -174,7 +216,7 @@
     <section class="slide slide--tint reveal">
       <div style="display:flex;justify-content:space-between;align-items:start;gap:1rem;flex-wrap:wrap">
         <div>
-          <p class="eyebrow">05 — Мобильная версия</p>
+          <p class="eyebrow">06 — Мобильная версия</p>
           <h2 class="h-l">Не уменьшенная копия, а&nbsp;свой сценарий</h2>
         </div>
         <span class="badge"><b>390</b>px frame</span>
@@ -195,7 +237,7 @@
 
     <!-- VISUAL -->
     <section class="slide reveal">
-      <p class="eyebrow">06 — Визуальный язык</p>
+      <p class="eyebrow">07 — Визуальный язык</p>
       <h2 class="h-l">Строгий интерфейс, один горячий акцент</h2>
       <p class="p" style="max-width:56ch;margin-top:1rem">Глубокий красный — цвет «горящего» предложения — только для действий и заголовков. Тёмные шапка и подвал собирают страницу в рамку, тёплый фон делает её мягче.</p>
       <div class="palette-strips" style="--n:4">
@@ -208,7 +250,7 @@
 
     <!-- RESULT -->
     <section class="slide slide--brand reveal">
-      <p class="eyebrow">07 — Итог</p>
+      <p class="eyebrow">08 — Итог</p>
       <h2 class="h-l" style="max-width:18ch">Понятный путь на&nbsp;любом устройстве</h2>
       <div class="stats" style="--n:3">
         <div class="stat"><b>10</b><span>экранов: 5 для десктопа и 5 для мобильной версии</span></div>
@@ -221,8 +263,7 @@
     <section class="slide slide--brand reveal">
       <div class="thanks">
         <div>
-          <h2 class="h-xl">Спасибо<br>за <em>просмотр</em></h2>
-          <p class="lead" style="margin-top:1.5rem">Нужен сервис, в котором пользователь не теряется по дороге к цели? Напишите — обсудим ваш проект.</p>
+          <p class="h-m" style="max-width:26ch">Нужен сервис, в котором пользователь не теряется по дороге к цели? Напишите — обсудим ваш проект.</p>
           <div class="author"><img src="img/foto.png" alt=""><div><b>Наталья Малинина</b><span>UX/UI-дизайнер</span></div></div>
         </div>
         <div class="thanks-links">
