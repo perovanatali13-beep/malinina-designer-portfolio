@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Теплица — кейс · Наталья Малинина</title>
+  <meta name="description" content="Кейс: дизайн интернет-магазина творческой цветочной мастерской «Теплица».">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300&family=Jost:wght@300;400;500&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/case.css">
+  <style>
+    body.case {
+      --brand: #37393F;
+      --brand-ink: #EEEEE0;
+      --brand-accent: #C3C597;
+      --accent: #6F7347;
+      --soft: #EEEEE0;
+      --tint: #DCDDC0;
+      --surface: #FFFFFF;
+      --text: #2B2D31;
+      --muted: #676A60;
+      --display: 'Nunito Sans', 'Jost', sans-serif;
+    }
+    .hand { font-family: 'Caveat', cursive; font-weight: 700; color: var(--brand-accent); }
+  </style>
+</head>
+<body class="case">
+
+  <nav>
+    <a href="index.html" class="nav-logo">Н. Малинина</a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Услуги</a></li>
+      <li><a href="index.html#portfolio">Портфолио</a></li>
+      <li><a href="index.html#experience">Опыт</a></li>
+      <li><a href="index.html#contact">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <main class="deck">
+
+    <!-- COVER -->
+    <section class="slide slide--brand reveal">
+      <div class="cover-top"><span>UX/UI · Интернет-магазин · 2026</span><span>Наталья Малинина</span></div>
+      <h1 class="h-xl cover-title"><span class="hand" style="font-size:1.15em">Теплица</span></h1>
+      <p class="lead cover-sub">Магазин цветочной мастерской, где букеты, аксессуары и декор делают не флористы, а художники.</p>
+      <div class="chips"><span class="chip">#e-commerce</span><span class="chip">#ui-kit</span><span class="chip">#сетка</span><span class="chip">#состояния</span><span class="chip">#figma</span></div>
+      <div class="cover-stage">
+        <div class="browser">
+          <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">teplitsa.art</span></div>
+          <img src="img/flowers-hero.webp" alt="Первый экран магазина «Теплица»">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="slide reveal">
+      <p class="eyebrow">01 — О проекте</p>
+      <div class="about">
+        <h2 class="h-l">Как продавать искусство и&nbsp;не&nbsp;потерять покупателя</h2>
+        <div>
+          <div class="about-item"><p class="about-k">Задача</p><p class="p">Спроектировать главную страницу интернет-магазина на компонентах UI-кита: меню, баннер, подборки товаров, статей и акций — с сеткой, логикой отступов и состояниями элементов.</p></div>
+          <div class="about-item"><p class="about-k">Аудитория</p><p class="p">Люди, которые ищут необычный подарок, и те, кто хочет сам научиться собирать букеты и венки на мастер-классах.</p></div>
+          <div class="about-item"><p class="about-k">Идея</p><p class="p">Витрина как прогулка по мастерской: сначала настроение, потом букеты и аксессуары, затем жизнь сообщества и выгодные предложения.</p></div>
+        </div>
+      </div>
+      <div class="meta-row">
+        <div><small>Роль</small><span>UX/UI-дизайнер</span></div>
+        <div><small>Тип</small><span>Главная магазина</span></div>
+        <div><small>Инструменты</small><span>Figma · UI-кит</span></div>
+        <div><small>Год</small><span>2026</span></div>
+      </div>
+    </section>
+
+    <!-- STATEMENT -->
+    <section class="slide slide--brand statement reveal">
+      <p class="eyebrow">Вызов</p>
+      <h2 class="h-l">Сетка одинаковых роз не&nbsp;расскажет, чем мастерская особенная</h2>
+      <p class="p">Каждый букет здесь — авторская работа с именем и историей, а мастерская живёт событиями. Нужно было найти баланс между атмосферой галереи и простотой интернет-магазина.</p>
+    </section>
+
+    <!-- BRIEF -->
+    <section class="slide slide--brand reveal" style="background:#2E3035">
+      <div class="about">
+        <div>
+          <p class="eyebrow">02 — Требования</p>
+          <h2 class="h-l">Чек-лист, по&nbsp;которому я проверяла макет</h2>
+          <p class="p" style="margin-top:1.25rem;max-width:40ch">Перед сдачей прошлась по каждому пункту — это помогает не потерять мелочи вроде состояний и выравнивания по сетке.</p>
+        </div>
+        <ul class="checklist" style="margin-top:0">
+          <li>Макет содержит меню, баннер, подборки товаров, статей и акций</li>
+          <li>Используются компоненты и стили из UI-кита</li>
+          <li>Тексты и изображения подходят тематике магазина</li>
+          <li>Стилистика соответствует тематике сайта — с обоснованием</li>
+          <li>Все объекты выровнены по сетке, в отступах есть логика</li>
+          <li>Добавлены состояния карточек и баннеров при наведении и клике</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- STRUCTURE -->
+    <section class="slide slide--tint reveal">
+      <p class="eyebrow">03 — Структура</p>
+      <h2 class="h-l">От схемы блоков — к витрине</h2>
+      <div class="scheme">
+        <div class="wire">
+          <div class="wire-row"><div class="wire-box"><div class="wire-bar" style="width:60%"></div></div><span>Меню</span></div>
+          <div class="wire-row"><div class="wire-hero"></div><span>Баннер</span></div>
+          <div class="wire-row"><div class="wire-cards" style="--c:4"><i></i><i></i><i></i><i></i></div><span>Товары</span></div>
+          <div class="wire-row"><div class="wire-cards" style="--c:3"><i></i><i></i><i></i></div><span>Статьи</span></div>
+          <div class="wire-row"><div class="wire-cards wide" style="--c:2"><i></i><i></i></div><span>Акции</span></div>
+        </div>
+        <div>
+          <div class="persona" style="border-top:none;padding-top:0"><span class="persona-tag">Баннер</span><p class="persona-text"><b>Настроение и позиционирование.</b> «Место, где рождается искусство» — сразу объясняет, чем мастерская отличается от обычного цветочного.</p></div>
+          <div class="persona"><span class="persona-tag">Товары</span><p class="persona-text"><b>Две витрины:</b> букеты и аксессуары по 4 позиции с переходом «Смотреть все». Недорогие аксессуары легко добавить к заказу.</p></div>
+          <div class="persona"><span class="persona-tag">Статьи</span><p class="persona-text"><b>Блог мастерской:</b> мероприятия и инструкции «Сделай сам» формируют сообщество и приводят на мастер-классы.</p></div>
+          <div class="persona"><span class="persona-tag">Акции</span><p class="persona-text"><b>Конкретная выгода</b> с условием и сроком — финальный аргумент перед покупкой.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTIONS -->
+    <section class="slide reveal">
+      <p class="eyebrow">04 — Решения</p>
+      <h2 class="h-l" style="margin-bottom:clamp(3rem,6vw,5rem)">Галерея, в&nbsp;которой удобно покупать</h2>
+
+      <div class="split">
+        <div>
+          <span class="num-tag">01 · Букеты</span>
+          <h3 class="h-m">У каждого букета — имя и состав</h3>
+          <p class="p">«Осенние вечера», «В тени кометы» — названия подчёркивают авторский характер. Под ними состав и цена: покупатель понимает, за что платит.</p>
+          <ul class="bullets">
+            <li>Фото на светлом фоне — букет главный</li>
+            <li>Длинный состав обрезается многоточием — сетка не ломается</li>
+          </ul>
+        </div>
+        <div class="split-media"><img src="img/flowers-bouquets.webp" alt="Витрина букетов" loading="lazy"></div>
+      </div>
+
+      <div class="split rev">
+        <div>
+          <span class="num-tag">02 · Блог</span>
+          <h3 class="h-m">Мастерская, которая живёт событиями</h3>
+          <p class="p">Статьи про мастер-классы и инструкции «Сделай сам» с тегами помогают сориентироваться и приводят людей на офлайн-встречи.</p>
+        </div>
+        <div class="split-media"><img src="img/flowers-blog.webp" alt="Блог творческой мастерской" loading="lazy"></div>
+      </div>
+
+      <div class="split">
+        <div>
+          <span class="num-tag">03 · Акции</span>
+          <h3 class="h-m">Выгода читается сразу</h3>
+          <p class="p">«Скидка 25% при заказе 5 веночков», «−15% на свадебный букет до 30.03» — условие и срок на крупной карточке с кнопкой.</p>
+        </div>
+        <div class="split-media"><img src="img/flowers-promo.webp" alt="Блок акций" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- STATES -->
+    <section class="slide slide--tint reveal">
+      <p class="eyebrow">05 — Состояния компонентов</p>
+      <h2 class="h-l">Карточка отвечает на&nbsp;каждое действие</h2>
+      <p class="p" style="max-width:56ch;margin-top:1rem">Для карточек и баннеров сделала варианты состояний: интерфейс подсказывает, что элемент кликабельный, и подтверждает нажатие.</p>
+      <div class="states">
+        <figure class="state"><img src="img/flowers-blog-default.webp" alt="Обычное состояние" loading="lazy"><figcaption><b>Default</b>Белая карточка на льняном фоне</figcaption></figure>
+        <figure class="state"><img src="img/flowers-blog-mid.webp" alt="Состояние при наведении" loading="lazy"><figcaption><b>Hover</b>Оливковая заливка и мягкая тень</figcaption></figure>
+        <figure class="state"><img src="img/flowers-blog-hover.webp" alt="Состояние при нажатии" loading="lazy"><figcaption><b>Pressed</b>Заливка и тёмная обводка</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- VISUAL -->
+    <section class="slide reveal">
+      <p class="eyebrow">06 — Визуальный язык</p>
+      <h2 class="h-l">Палитра сухоцветов и&nbsp;рукописный логотип</h2>
+      <p class="p" style="max-width:56ch;margin-top:1rem">Фон цвета небелёного льна, оливковый акцент и графитовые кнопки создают ощущение крафтовой мастерской. Рукописный логотип — как подпись художника на работе.</p>
+      <div class="palette-strips" style="--n:4">
+        <div class="strip"><div class="strip-color" style="background:#EEEEE0"></div><div class="strip-info"><p class="strip-name">Лён</p><p class="strip-hex">#EEEEE0</p><p class="strip-role">Фон страницы</p></div></div>
+        <div class="strip"><div class="strip-color" style="background:#C3C597"></div><div class="strip-info"><p class="strip-name">Олива</p><p class="strip-hex">#C3C597</p><p class="strip-role">Hover, теги</p></div></div>
+        <div class="strip"><div class="strip-color" style="background:#37393F"></div><div class="strip-info"><p class="strip-name">Графит</p><p class="strip-hex">#37393F</p><p class="strip-role">Кнопки, текст</p></div></div>
+        <div class="strip"><div class="strip-color" style="background:#FFFFFF;border-bottom:1px solid #eee"></div><div class="strip-info"><p class="strip-name">Карточка</p><p class="strip-hex">#FFFFFF</p><p class="strip-role">Карточки товаров</p></div></div>
+      </div>
+    </section>
+
+    <!-- RESULT -->
+    <section class="slide slide--brand reveal">
+      <p class="eyebrow">07 — Итог</p>
+      <h2 class="h-l" style="max-width:18ch">Магазин с&nbsp;характером галереи</h2>
+      <div class="stats" style="--n:3">
+        <div class="stat"><b>5</b><span>блоков главной по схеме: меню, баннер, товары, статьи, акции</span></div>
+        <div class="stat"><b>3</b><span>источника выручки: букеты, аксессуары и мастер-классы</span></div>
+        <div class="stat"><b>3</b><span>состояния карточек: default, hover и pressed</span></div>
+      </div>
+    </section>
+
+    <!-- FULL -->
+    <section class="slide slide--tint reveal">
+      <div style="display:flex;justify-content:space-between;align-items:end;gap:1rem;flex-wrap:wrap">
+        <div><p class="eyebrow">Макет целиком</p><h2 class="h-m">Прокрутите страницу внутри окна</h2></div>
+        <span class="badge"><b>1310</b>px frame</span>
+      </div>
+      <div class="scroll-window">
+        <div class="browser">
+          <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">teplitsa.art</span></div>
+          <div class="scroll"><img src="img/flowers-full.webp" alt="Полный макет магазина" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THANKS -->
+    <section class="slide slide--brand reveal">
+      <div class="thanks">
+        <div>
+          <h2 class="h-xl">Спасибо<br>за <em>просмотр</em></h2>
+          <p class="lead" style="margin-top:1.5rem">Нужен магазин, который передаёт характер бренда и при этом удобен для покупки? Давайте обсудим.</p>
+          <div class="author"><img src="img/foto.png" alt=""><div><b>Наталья Малинина</b><span>UX/UI-дизайнер</span></div></div>
+        </div>
+        <div class="thanks-links">
+          <a class="thanks-link" href="https://t.me/natali_m2" target="_blank" rel="noopener"><div><small>Telegram</small>@natali_m2</div><span>→</span></a>
+          <a class="thanks-link" href="case-tours.html"><div><small>Предыдущий кейс</small>Банк горящих туров</div><span>←</span></a>
+          <a class="thanks-link next" href="case-journal.html"><div><small>Следующий кейс</small>Журнал онлайн-школы</div><span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span class="footer-name">Малинина Наталья — UX/UI-дизайнер</span>
+    <span class="footer-copy">© 2026</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

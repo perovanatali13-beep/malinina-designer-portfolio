@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Банк горящих туров — кейс · Наталья Малинина</title>
+  <meta name="description" content="Кейс: редизайн веб-сервиса и мобильной версии «Банк горящих туров» — путь от поиска тура до оплаты.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300&family=Jost:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/case.css">
+  <style>
+    body.case {
+      --brand: #262626;
+      --brand-ink: #FFFDF7;
+      --brand-accent: #FF4D4F;
+      --accent: #A50F12;
+      --soft: #FFFDF7;
+      --tint: #F2ECE2;
+      --surface: #FFFFFF;
+      --text: #1F1F1F;
+      --muted: #6B6B6B;
+      --display: 'Manrope', 'Jost', sans-serif;
+    }
+    .hot { color: var(--brand-accent); }
+  </style>
+</head>
+<body class="case">
+
+  <nav>
+    <a href="index.html" class="nav-logo">Н. Малинина</a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Услуги</a></li>
+      <li><a href="index.html#portfolio">Портфолио</a></li>
+      <li><a href="index.html#experience">Опыт</a></li>
+      <li><a href="index.html#contact">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <main class="deck">
+
+    <!-- COVER -->
+    <section class="slide slide--brand reveal">
+      <div class="cover-top"><span>UX/UI · Редизайн веб-сервиса · 2026</span><span>Наталья Малинина</span></div>
+      <h1 class="h-xl cover-title">Банк<br><span class="hot">горящих</span> туров</h1>
+      <p class="lead cover-sub">Путь от поиска тура до оплаты — за пять экранов. На десктопе и в телефоне.</p>
+      <div class="chips"><span class="chip">#редизайн</span><span class="chip">#ux-аудит</span><span class="chip">#user-flow</span><span class="chip">#адаптив</span><span class="chip">#figma</span></div>
+      <div class="cover-stage">
+        <div class="browser">
+          <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">hottours.ru</span></div>
+          <img src="img/tours-desktop.webp" alt="Пять экранов десктопной версии">
+        </div>
+        <div class="float-phone phone"><div class="phone-screen scroll"><img src="img/tours-m-home.webp" alt="Мобильная главная"></div></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="slide reveal">
+      <p class="eyebrow">01 — О проекте</p>
+      <div class="about">
+        <h2 class="h-l">Горящий тур покупают быстро — каждый лишний шаг стоит продажи</h2>
+        <div>
+          <div class="about-item"><p class="about-k">Задача</p><p class="p">Сделать редизайн веб-сервиса бронирования туров и спроектировать мобильную версию: от поиска до подтверждения оплаты.</p></div>
+          <div class="about-item"><p class="about-k">Аудитория</p><p class="p">Люди, которые хотят уехать скоро и выгодно. Решение принимают быстро, часто — с телефона, сравнивая несколько отелей.</p></div>
+          <div class="about-item"><p class="about-k">Идея</p><p class="p">Линейный сценарий: каждый экран отвечает на один вопрос пользователя и ведёт к следующему шагу. Красный — только для действий.</p></div>
+        </div>
+      </div>
+      <div class="meta-row">
+        <div><small>Роль</small><span>UX/UI-дизайнер</span></div>
+        <div><small>Тип</small><span>Редизайн веб-сервиса</span></div>
+        <div><small>Платформы</small><span>Десктоп · Мобайл</span></div>
+        <div><small>Год</small><span>2026</span></div>
+      </div>
+    </section>
+
+    <!-- STATEMENT -->
+    <section class="slide slide--brand statement reveal">
+      <p class="eyebrow">Проблема</p>
+      <h2 class="h-l">Пользователь теряется по&nbsp;дороге к&nbsp;оплате</h2>
+      <p class="p">Поиск тонет среди баннеров, фильтры не помещаются в экран телефона, а на странице отеля сложно быстро сравнить условия. Человек закрывает вкладку и уходит к конкуренту.</p>
+    </section>
+
+    <!-- AUDIT -->
+    <section class="slide slide--tint reveal">
+      <p class="eyebrow">02 — UX-аудит</p>
+      <h2 class="h-l">Где ломается сценарий</h2>
+      <div class="bento">
+        <div class="tile"><p class="tile-num">01</p><p class="tile-t">Перегруженная главная</p><p class="p">Форма поиска теряется среди промо — непонятно, с чего начать.</p></div>
+        <div class="tile"><p class="tile-num">02</p><p class="tile-t">Фильтры-простыня</p><p class="p">Десятки параметров одним списком. На телефоне они закрывают выдачу.</p></div>
+        <div class="tile"><p class="tile-num">03</p><p class="tile-t">Нет уверенности</p><p class="p">Условия, номера и отзывы разбросаны по странице отеля.</p></div>
+        <div class="tile s12 tile--brand" style="min-height:0">
+          <p class="tile-t" style="font-size:clamp(1.3rem,2.4vw,1.9rem);font-weight:500;line-height:1.35">Решение — <span class="hot">линейный путь</span>: один экран = один вопрос пользователя.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLOW -->
+    <section class="slide reveal">
+      <p class="eyebrow">03 — User flow</p>
+      <h2 class="h-l">Пять шагов до отпуска</h2>
+      <div class="scope" style="--steps:5">
+        <div class="scope-step"><span class="scope-pill"><em>1</em>Поиск тура</span><p><b>Куда и когда?</b><br>Форма поиска и подборки</p></div>
+        <div class="scope-step"><span class="scope-pill"><em>2</em>Выбор отеля</span><p><b>Что есть?</b><br>Популярные отели по запросу</p></div>
+        <div class="scope-step"><span class="scope-pill"><em>3</em>Выбор тура</span><p><b>Что подходит мне?</b><br>Фильтры, карта, сортировка</p></div>
+        <div class="scope-step"><span class="scope-pill"><em>4</em>Отель и отзывы</span><p><b>Здесь хорошо?</b><br>Условия, номера, оценки</p></div>
+        <div class="scope-step"><span class="scope-pill"><em>5</em>Оплата</span><p><b>Всё верно?</b><br>Резюме бронирования</p></div>
+      </div>
+      <div style="margin-top:3rem;display:flex;justify-content:flex-end"><span class="badge"><b>1440</b>px frame</span></div>
+      <div class="browser rounded" style="margin-top:1rem">
+        <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">hottours.ru</span></div>
+        <img src="img/tours-desktop.webp" alt="Экраны сценария на десктопе" loading="lazy">
+      </div>
+    </section>
+
+    <!-- SOLUTIONS -->
+    <section class="slide reveal">
+      <p class="eyebrow">04 — Решения</p>
+      <h2 class="h-l" style="margin-bottom:clamp(3rem,6vw,5rem)">Что изменилось на&nbsp;каждом шаге</h2>
+
+      <div class="split">
+        <div>
+          <span class="num-tag">Шаг 1 · Поиск тура</span>
+          <h3 class="h-m">Поиск — главный герой первого экрана</h3>
+          <p class="p">Форма «Откуда — Куда — Когда — Гости» стоит на первом экране и сразу ведёт к результату. Ниже — подборки для тех, кто ещё не решил.</p>
+          <ul class="bullets">
+            <li>Популярные направления и отели — старт без ввода данных</li>
+            <li>Блог о путешествиях вдохновляет и удерживает</li>
+            <li>Акции в конце — не мешают основному сценарию</li>
+          </ul>
+        </div>
+        <div class="split-media tall"><img src="img/tours-home.webp" alt="Главная" loading="lazy"></div>
+      </div>
+
+      <div class="split rev">
+        <div>
+          <span class="num-tag">Шаг 3 · Выбор тура</span>
+          <h3 class="h-m">10 групп фильтров вместо простыни</h3>
+          <p class="p">Параметры разбиты по логике выбора: цена, регион, рейтинг, питание, местоположение, удобства в отеле и номере. Рядом — карта.</p>
+          <ul class="bullets">
+            <li>Слайдер цены вместо полей ввода</li>
+            <li>«Применить» и «Сбросить» всегда на виду</li>
+            <li>В карточке: рейтинг, число отзывов, цена</li>
+          </ul>
+        </div>
+        <div class="split-media tall"><img src="img/tours-filters.webp" alt="Выдача с фильтрами" loading="lazy"></div>
+      </div>
+
+      <div class="split">
+        <div>
+          <span class="num-tag">Шаг 4 · Отель</span>
+          <h3 class="h-m">Порядок блоков = порядок вопросов туриста</h3>
+          <p class="p">Как выглядит → что включено → когда заезд → какой номер → что говорят другие.</p>
+          <ul class="bullets">
+            <li>Под заголовком: «Всё включено», «Бесплатная отмена»</li>
+            <li>Заезд и выезд — на заметных плашках</li>
+            <li>Общая оценка и фото гостей в отзывах</li>
+          </ul>
+        </div>
+        <div class="split-media tall"><img src="img/tours-hotel.webp" alt="Страница отеля" loading="lazy"></div>
+      </div>
+
+      <div class="split rev">
+        <div>
+          <span class="num-tag">Шаг 5 · Оплата</span>
+          <h3 class="h-m">Финальная проверка в одном экране</h3>
+          <p class="p">Отель, даты, гости и условия — коротким резюме. Пользователь видит всё сразу и уверенно нажимает «Оплатить».</p>
+        </div>
+        <div class="split-media"><img src="img/tours-booking.webp" alt="Подтверждение оплаты" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- MOBILE -->
+    <section class="slide slide--tint reveal">
+      <div style="display:flex;justify-content:space-between;align-items:start;gap:1rem;flex-wrap:wrap">
+        <div>
+          <p class="eyebrow">05 — Мобильная версия</p>
+          <h2 class="h-l">Не уменьшенная копия, а&nbsp;свой сценарий</h2>
+        </div>
+        <span class="badge"><b>390</b>px frame</span>
+      </div>
+      <p class="p" style="max-width:56ch;margin-top:1rem">Главное решение — фильтры уходят в полноэкранную шторку и не перекрывают выдачу. Экраны можно прокрутить.</p>
+      <div class="phones" style="--n:4">
+        <figure><div class="phone"><div class="phone-screen scroll"><img src="img/tours-m-home.webp" alt="Главная" loading="lazy"></div></div><figcaption>Поиск</figcaption></figure>
+        <figure><div class="phone"><div class="phone-screen scroll"><img src="img/tours-m-filters.webp" alt="Фильтры" loading="lazy"></div></div><figcaption>Фильтры-шторка</figcaption></figure>
+        <figure><div class="phone"><div class="phone-screen scroll"><img src="img/tours-m-hotel.webp" alt="Отель" loading="lazy"></div></div><figcaption>Отель</figcaption></figure>
+        <figure><div class="phone"><div class="phone-screen scroll"><img src="img/tours-m-booking.webp" alt="Оплата" loading="lazy"></div></div><figcaption>Оплата</figcaption></figure>
+      </div>
+      <div class="bento">
+        <div class="tile"><p class="tile-t">Быстрые фильтры лентой</p><p class="p">Сортировка и частые фильтры — горизонтальной лентой над выдачей.</p></div>
+        <div class="tile"><p class="tile-t">Кнопки под палец</p><p class="p">«Выбрать» и «Оплатить» на всю ширину экрана.</p></div>
+        <div class="tile"><p class="tile-t">Одна колонка</p><p class="p">Карточки отелей с крупным фото — удобно листать.</p></div>
+      </div>
+    </section>
+
+    <!-- VISUAL -->
+    <section class="slide reveal">
+      <p class="eyebrow">06 — Визуальный язык</p>
+      <h2 class="h-l">Строгий интерфейс, один горячий акцент</h2>
+      <p class="p" style="max-width:56ch;margin-top:1rem">Глубокий красный — цвет «горящего» предложения — только для действий и заголовков. Тёмные шапка и подвал собирают страницу в рамку, тёплый фон делает её мягче.</p>
+      <div class="palette-strips" style="--n:4">
+        <div class="strip"><div class="strip-color" style="background:#A50F12"></div><div class="strip-info"><p class="strip-name">Горящий</p><p class="strip-hex">#A50F12</p><p class="strip-role">Кнопки, заголовки</p></div></div>
+        <div class="strip"><div class="strip-color" style="background:#262626"></div><div class="strip-info"><p class="strip-name">Графит</p><p class="strip-hex">#262626</p><p class="strip-role">Шапка, подвал</p></div></div>
+        <div class="strip"><div class="strip-color" style="background:#FFD83A"></div><div class="strip-info"><p class="strip-name">Рейтинг</p><p class="strip-hex">#FFD83A</p><p class="strip-role">Оценки, плашки</p></div></div>
+        <div class="strip"><div class="strip-color" style="background:#FFFDF7;border-bottom:1px solid #eee"></div><div class="strip-info"><p class="strip-name">Тёплый фон</p><p class="strip-hex">#FFFDF7</p><p class="strip-role">Фон страниц</p></div></div>
+      </div>
+    </section>
+
+    <!-- RESULT -->
+    <section class="slide slide--brand reveal">
+      <p class="eyebrow">07 — Итог</p>
+      <h2 class="h-l" style="max-width:18ch">Понятный путь на&nbsp;любом устройстве</h2>
+      <div class="stats" style="--n:3">
+        <div class="stat"><b>10</b><span>экранов: 5 для десктопа и 5 для мобильной версии</span></div>
+        <div class="stat"><b>5</b><span>шагов от поиска до оплаты в линейном сценарии</span></div>
+        <div class="stat"><b>10</b><span>групп фильтров вместо длинного списка параметров</span></div>
+      </div>
+    </section>
+
+    <!-- THANKS -->
+    <section class="slide slide--brand reveal">
+      <div class="thanks">
+        <div>
+          <h2 class="h-xl">Спасибо<br>за <em>просмотр</em></h2>
+          <p class="lead" style="margin-top:1.5rem">Нужен сервис, в котором пользователь не теряется по дороге к цели? Напишите — обсудим ваш проект.</p>
+          <div class="author"><img src="img/foto.png" alt=""><div><b>Наталья Малинина</b><span>UX/UI-дизайнер</span></div></div>
+        </div>
+        <div class="thanks-links">
+          <a class="thanks-link" href="https://t.me/natali_m2" target="_blank" rel="noopener"><div><small>Telegram</small>@natali_m2</div><span>→</span></a>
+          <a class="thanks-link" href="case-routes.html"><div><small>Предыдущий кейс</small>Лайтовые маршруты</div><span>←</span></a>
+          <a class="thanks-link next" href="case-flowers.html"><div><small>Следующий кейс</small>Цветочная мастерская «Теплица»</div><span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span class="footer-name">Малинина Наталья — UX/UI-дизайнер</span>
+    <span class="footer-copy">© 2026</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

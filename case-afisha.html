@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Афиша Antalya Kültür Sanat — кейс · Наталья Малинина</title>
+  <meta name="description" content="Кейс: страница афиши выставки «Дневники Фриды Кало» для культурного центра в Анталье.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300&family=Jost:wght@300;400;500&family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/case.css">
+  <style>
+    body.case {
+      --brand: #2A1F26;
+      --brand-ink: #FBF6F3;
+      --brand-accent: #F06BB3;
+      --accent: #C42F80;
+      --soft: #FBF6F3;
+      --tint: #F4E4EC;
+      --surface: #FFFFFF;
+      --text: #2B2B2B;
+      --muted: #6A6C6B;
+      --display: 'Noto Sans', 'Jost', sans-serif;
+    }
+    .rainbow { background: linear-gradient(90deg, #8ac6ff, #b38cff, #ff7ac3, #ffb36b, #9be38a); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .sched { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.92rem; }
+    .sched td { padding: 0.55rem 0; border-bottom: 1px dashed #e3d6dc; }
+    .sched td:last-child { text-align: right; font-weight: 600; }
+    .sched tr.hl td { color: var(--accent); }
+  </style>
+</head>
+<body class="case">
+
+  <nav>
+    <a href="index.html" class="nav-logo">Н. Малинина</a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Услуги</a></li>
+      <li><a href="index.html#portfolio">Портфолио</a></li>
+      <li><a href="index.html#experience">Опыт</a></li>
+      <li><a href="index.html#contact">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <main class="deck">
+
+    <!-- COVER -->
+    <section class="slide slide--brand reveal">
+      <div class="cover-top"><span>UX/UI · Страница события · 2026</span><span>Наталья Малинина</span></div>
+      <h1 class="h-xl cover-title">Frida Kahlo’nun<br><span class="rainbow">Günlükleri</span></h1>
+      <p class="lead cover-sub">Афиша выставки «Дневники Фриды Кало» для культурного центра Antalya Kültür Sanat. Всё, что нужно посетителю, — на одной странице.</p>
+      <div class="chips"><span class="chip">#веб-дизайн</span><span class="chip">#культура</span><span class="chip">#информационная-архитектура</span><span class="chip">#локализация-tr</span></div>
+      <div class="cover-stage">
+        <div class="browser">
+          <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">antalyakultursanat.org.tr</span></div>
+          <img src="img/afisha-hero.webp" alt="Первый экран афиши выставки">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="slide reveal">
+      <p class="eyebrow">01 — О проекте</p>
+      <div class="about">
+        <h2 class="h-l">Выставка, на&nbsp;которую хочется пойти</h2>
+        <div>
+          <div class="about-item"><p class="about-k">Задача</p><p class="p">Спроектировать страницу афиши выставки для сайта культурного центра в Анталье: описание, фото экспозиции, расписание, контакты и покупка билета.</p></div>
+          <div class="about-item"><p class="about-k">Аудитория</p><p class="p">Жители и гости Антальи, которые ищут, куда сходить. Приходят на страницу с конкретными вопросами и хотят быстро получить ответы.</p></div>
+          <div class="about-item"><p class="about-k">Идея</p><p class="p">Работы Фриды задают настроение, интерфейс отходит на второй план. Один яркий цвет — только для покупки билета.</p></div>
+        </div>
+      </div>
+      <div class="meta-row">
+        <div><small>Роль</small><span>UX/UI-дизайнер</span></div>
+        <div><small>Тип</small><span>Страница события</span></div>
+        <div><small>Язык интерфейса</small><span>Турецкий</span></div>
+        <div><small>Год</small><span>2026</span></div>
+      </div>
+    </section>
+
+    <!-- STATEMENT -->
+    <section class="slide slide--brand statement reveal">
+      <p class="eyebrow">Принцип</p>
+      <h2 class="h-l">Четыре вопроса посетителя — четыре блока страницы</h2>
+      <p class="p">Изучила, как устроены страницы событий у музеев и культурных центров, и оставила только то, что помогает принять решение и прийти.</p>
+    </section>
+
+    <!-- QUESTIONS -->
+    <section class="slide slide--tint reveal">
+      <p class="eyebrow">02 — Информационная архитектура</p>
+      <h2 class="h-l">Вопрос → блок</h2>
+      <div class="bento">
+        <div class="tile s6"><p class="tile-num">?</p><p class="tile-t">Что это за выставка?</p><p class="p"><b style="color:var(--accent)">Açıklama</b> — название, даты и короткое описание.</p></div>
+        <div class="tile s6"><p class="tile-num">?</p><p class="tile-t">Как она выглядит?</p><p class="p"><b style="color:var(--accent)">Fotoğraf</b> — крупные фотографии экспозиции.</p></div>
+        <div class="tile s6"><p class="tile-num">?</p><p class="tile-t">Когда можно прийти?</p><p class="p"><b style="color:var(--accent)">Bilgilendirme</b> — дни, часы работы, адрес и контакты.</p></div>
+        <div class="tile s6 tile--accent"><p class="tile-num">₺</p><p class="tile-t">Сколько стоит?</p><p class="p"><b>Bilet Al · 450 TL</b> — цена рядом с кнопкой покупки.</p></div>
+      </div>
+    </section>
+
+    <!-- SOLUTIONS -->
+    <section class="slide reveal">
+      <p class="eyebrow">03 — Решения</p>
+      <h2 class="h-l" style="margin-bottom:clamp(3rem,6vw,5rem)">Атмосфера сверху, практика — ниже</h2>
+
+      <div class="split">
+        <div>
+          <span class="num-tag">01 · Первый экран</span>
+          <h3 class="h-m">Автопортрет на весь экран</h3>
+          <p class="p">Работа Фриды сразу передаёт настроение. Название и даты вынесены крупно слева, на спокойной части изображения, чтобы текст хорошо читался.</p>
+          <ul class="bullets">
+            <li>Пункты меню повторяют разделы страницы и работают как якоря</li>
+            <li>Радужный логотип центра задаёт акцентный цвет</li>
+          </ul>
+        </div>
+        <div class="split-media"><img src="img/afisha-hero.webp" alt="Первый экран" loading="lazy"></div>
+      </div>
+
+      <div class="split rev">
+        <div>
+          <span class="num-tag">02 · Билет</span>
+          <h3 class="h-m">Кнопка — в момент наибольшего интереса</h3>
+          <p class="p">«Bilet Al» стоит сразу после описания выставки. Цена рядом с кнопкой: не нужно искать стоимость по странице.</p>
+        </div>
+        <div class="split-media"><img src="img/afisha-info.webp" alt="Описание и покупка билета" loading="lazy"></div>
+      </div>
+
+      <div class="split">
+        <div>
+          <span class="num-tag">03 · Галерея</span>
+          <h3 class="h-m">Фото продают впечатление</h3>
+          <p class="p">Две крупные фотографии показывают разные части экспозиции — костюмы и инсталляцию из страниц дневника. Понятно, что это погружение, а не просто картины на стенах.</p>
+        </div>
+        <div class="split-media"><img src="img/afisha-photos.webp" alt="Фото экспозиции" loading="lazy"></div>
+      </div>
+
+      <div class="split rev">
+        <div>
+          <span class="num-tag">04 · Расписание</span>
+          <h3 class="h-m">Часы работы — таблицей</h3>
+          <p class="p">Двухколоночная таблица «день — время»: легко найти свой день и заметить исключения.</p>
+          <table class="sched">
+            <tr><td>Salı — Cumartesi</td><td>11:00 – 19:00</td></tr>
+            <tr class="hl"><td>Perşembe</td><td>11:00 – 21:00</td></tr>
+            <tr class="hl"><td>Pazar</td><td>13:00 – 19:00</td></tr>
+          </table>
+        </div>
+        <div class="split-media"><img src="img/afisha-details.webp" alt="Информация для посетителей" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- VISUAL -->
+    <section class="slide reveal" style="background:#F6EEF1">
+      <p class="eyebrow">04 — Визуальный язык</p>
+      <h2 class="h-l">Один яркий акцент из&nbsp;мексиканской палитры</h2>
+      <p class="p" style="max-width:56ch;margin-top:1rem">Фуксия — цвет мексиканской культуры и цвет из логотипа центра — только для покупки билета и входа. Остальной интерфейс сдержанно-серый, чтобы не спорить с работами художницы.</p>
+      <div class="palette-strips" style="--n:3">
+        <div class="strip"><div class="strip-color" style="background:#E34A9D"></div><div class="strip-info"><p class="strip-name">Фуксия</p><p class="strip-hex">#E34A9D</p><p class="strip-role">Bilet Al, Giriş Yap</p></div></div>
+        <div class="strip"><div class="strip-color" style="background:#6A6C6B"></div><div class="strip-info"><p class="strip-name">Графитовый</p><p class="strip-hex">#6A6C6B</p><p class="strip-role">Заголовки и текст</p></div></div>
+        <div class="strip"><div class="strip-color" style="background:#FFFFFF;border-bottom:1px solid #eee"></div><div class="strip-info"><p class="strip-name">Белый</p><p class="strip-hex">#FFFFFF</p><p class="strip-role">Фон</p></div></div>
+      </div>
+      <div class="type-grid">
+        <div class="type-card dark">
+          <p class="type-aa">Ğş</p>
+          <p class="type-name">Турецкий интерфейс</p>
+          <p class="p">Все тексты на турецком для местной аудитории. Шрифт выбран с полной поддержкой турецких символов: ğ, ş, ı, ç, ö, ü.</p>
+        </div>
+        <div class="type-card type-scale">
+          <div><small>Заголовок события</small><span style="font-size:clamp(1.6rem,3vw,2.4rem);font-weight:700;color:#5f6160">Frida Kahlo’nun Günlükleri</span></div>
+          <div><small>Даты</small><span style="font-size:1.4rem;font-weight:600;color:#5f6160">2.11.2025 — 30.01.2026</span></div>
+          <div><small>Заголовок раздела</small><span style="font-size:1.3rem;font-weight:600;color:#5f6160">Bilgilendirme</span></div>
+          <div><small>Основной текст</small><span style="font-size:0.95rem;color:#6a6c6b">Antalya Kültür Sanat, Kültür Yolu Festivali kapsamında…</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULT -->
+    <section class="slide slide--brand reveal">
+      <p class="eyebrow">05 — Итог</p>
+      <h2 class="h-l" style="max-width:18ch">Вся информация — на&nbsp;одной странице</h2>
+      <div class="stats" style="--n:3">
+        <div class="stat"><b>4</b><span>вопроса посетителя закрыты четырьмя блоками страницы</span></div>
+        <div class="stat"><b>1</b><span>акцентный цвет — только для целевых действий</span></div>
+        <div class="stat"><b>TR</b><span>интерфейс на турецком языке для местной аудитории</span></div>
+      </div>
+    </section>
+
+    <!-- FULL -->
+    <section class="slide slide--tint reveal">
+      <div style="display:flex;justify-content:space-between;align-items:end;gap:1rem;flex-wrap:wrap">
+        <div><p class="eyebrow">Макет целиком</p><h2 class="h-m">Прокрутите страницу внутри окна</h2></div>
+        <span class="badge"><b>1440</b>px frame</span>
+      </div>
+      <div class="scroll-window">
+        <div class="browser">
+          <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">antalyakultursanat.org.tr</span></div>
+          <div class="scroll"><img src="img/afisha-full.webp" alt="Полный макет афиши" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THANKS -->
+    <section class="slide slide--brand reveal">
+      <div class="thanks">
+        <div>
+          <h2 class="h-xl">Спасибо<br>за <em>просмотр</em></h2>
+          <p class="lead" style="margin-top:1.5rem">Нужна страница, на которой посетитель сразу находит ответы? Напишите — обсудим ваш проект.</p>
+          <div class="author"><img src="img/foto.png" alt=""><div><b>Наталья Малинина</b><span>UX/UI-дизайнер</span></div></div>
+        </div>
+        <div class="thanks-links">
+          <a class="thanks-link" href="https://t.me/natali_m2" target="_blank" rel="noopener"><div><small>Telegram</small>@natali_m2</div><span>→</span></a>
+          <a class="thanks-link" href="case-journal.html"><div><small>Предыдущий кейс</small>Журнал онлайн-школы</div><span>←</span></a>
+          <a class="thanks-link next" href="index.html#portfolio"><div><small>Все работы</small>Вернуться к портфолио</div><span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span class="footer-name">Малинина Наталья — UX/UI-дизайнер</span>
+    <span class="footer-copy">© 2026</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

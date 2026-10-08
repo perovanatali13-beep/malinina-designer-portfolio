@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Журнал «Точка зрения» — кейс · Наталья Малинина</title>
+  <meta name="description" content="Кейс: редизайн страницы журнала онлайн-школы — стили текста, цвета и компоненты.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300&family=Jost:wght@300;400;500&family=Golos+Text:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/case.css">
+  <style>
+    body.case {
+      --brand: #1F1F1F;
+      --brand-ink: #FFFFFF;
+      --brand-accent: #FF7A45;
+      --accent: #3E3E3E;
+      --soft: #F5F5F5;
+      --tint: #EBEBEB;
+      --surface: #FFFFFF;
+      --text: #1F1F1F;
+      --muted: #646464;
+      --display: 'Golos Text', 'Jost', sans-serif;
+    }
+    .tag-cloud { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 2.5rem; }
+    .tag-cloud span { font-size: 0.85rem; padding: 0.45rem 1rem; border-radius: 999px; background: #EFEFEF; color: #3E3E3E; }
+    .tag-cloud span.on { background: #3E3E3E; color: #fff; }
+    .tag-cloud .sep { background: none; padding: 0.45rem 0.25rem; color: #9a9a9a; font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; }
+    .anat { list-style: none; display: grid; gap: 0.9rem; margin-top: 1.5rem; counter-reset: a; }
+    .anat li { display: grid; grid-template-columns: 2rem 1fr; gap: 0.9rem; align-items: start; font-size: 0.9rem; color: var(--muted); line-height: 1.55; }
+    .anat li::before { counter-increment: a; content: counter(a); width: 1.8rem; height: 1.8rem; border-radius: 50%; background: var(--brand); color: #fff; display: grid; place-items: center; font-size: 0.8rem; font-weight: 600; }
+    .anat b { color: var(--text); font-weight: 600; }
+  </style>
+</head>
+<body class="case">
+
+  <nav>
+    <a href="index.html" class="nav-logo">Н. Малинина</a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Услуги</a></li>
+      <li><a href="index.html#portfolio">Портфолио</a></li>
+      <li><a href="index.html#experience">Опыт</a></li>
+      <li><a href="index.html#contact">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <main class="deck">
+
+    <!-- COVER -->
+    <section class="slide slide--brand reveal">
+      <div class="cover-top"><span>UX/UI · Редизайн медиа · 2026</span><span>Наталья Малинина</span></div>
+      <h1 class="h-xl cover-title">Точка<br>зрения</h1>
+      <p class="lead cover-sub">Журнал онлайн-школы, где делятся экспертизой в дизайне, IT и других профессиях. Найти свою статью — за один клик.</p>
+      <div class="chips"><span class="chip">#редизайн</span><span class="chip">#дизайн-система</span><span class="chip">#типографика</span><span class="chip">#компоненты</span><span class="chip">#figma</span></div>
+      <div class="cover-stage">
+        <div class="browser">
+          <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">tochka-zreniya.school/journal</span></div>
+          <img src="img/journal-full.webp" alt="Страница журнала после редизайна">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="slide reveal">
+      <p class="eyebrow">01 — О проекте</p>
+      <div class="about">
+        <h2 class="h-l">Много хороших статей, которые сложно найти</h2>
+        <div>
+          <div class="about-item"><p class="about-k">Задача</p><p class="p">Сделать редизайн страницы журнала: собрать систему стилей текста и цвета, компоненты карточки и тегов и навести порядок в навигации.</p></div>
+          <div class="about-item"><p class="about-k">Аудитория</p><p class="p">Будущие и нынешние студенты школы — от новичков до практиков. Каждый ищет материалы по своей профессии и в удобном формате.</p></div>
+          <div class="about-item"><p class="about-k">Идея</p><p class="p">Нейтральный интерфейс в оттенках серого, чтобы цвет на странице давали только обложки статей. Журнал выглядит как галерея работ.</p></div>
+        </div>
+      </div>
+      <div class="meta-row">
+        <div><small>Роль</small><span>UX/UI-дизайнер</span></div>
+        <div><small>Тип</small><span>Редизайн страницы</span></div>
+        <div><small>Инструменты</small><span>Figma · Styles · Components</span></div>
+        <div><small>Год</small><span>2026</span></div>
+      </div>
+    </section>
+
+    <!-- STATEMENT -->
+    <section class="slide slide--brand statement reveal">
+      <p class="eyebrow">Проблема</p>
+      <h2 class="h-l">Читатель не&nbsp;нашёл статью — и&nbsp;так и&nbsp;не&nbsp;узнал о&nbsp;школе</h2>
+      <p class="p">Журнал — канал привлечения учеников: человек читает полезный материал и знакомится с курсами. Если навигация не помогает, он уходит раньше.</p>
+    </section>
+
+    <!-- BEFORE / AFTER -->
+    <section class="slide slide--tint reveal">
+      <p class="eyebrow">02 — До и после</p>
+      <h2 class="h-l">Из черновика — в систему</h2>
+      <p class="p" style="max-width:56ch;margin-top:1rem">Слева исходный макет без стилей: системный шрифт с засечками, нет иерархии и ритма. Справа — та же структура, собранная на текстовых и цветовых стилях и компонентах.</p>
+      <div class="ba">
+        <div class="ba-col"><div class="ba-label"><span>До</span><span>без стилей · фрагмент</span></div><img src="img/journal-before.webp" alt="Макет до редизайна" loading="lazy"></div>
+        <div class="ba-col"><div class="ba-label"><b>После</b><span>Golos Text · стили · компоненты</span></div><img src="img/journal-full.webp" alt="Макет после редизайна" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- SOLUTIONS -->
+    <section class="slide reveal">
+      <p class="eyebrow">03 — Решения</p>
+      <h2 class="h-l" style="margin-bottom:clamp(2rem,4vw,3rem)">Навигация в&nbsp;два измерения</h2>
+      <p class="p" style="max-width:60ch">В одной ленте тегов — два типа фильтров: <b style="color:var(--text)">профессия</b> и <b style="color:var(--text)">формат</b>. Можно выбрать сразу несколько, например «Моушн-дизайн и CG» + «Инструкция».</p>
+      <div class="tag-cloud">
+        <span class="sep">Профессия</span>
+        <span class="on">Моушн-дизайн и CG</span><span>UX/UI-дизайн</span><span>Графический дизайн</span><span>Видео и кино</span><span>Иллюстрация</span><span>Менеджмент</span><span>Современное искусство</span>
+        <span class="sep">Формат</span>
+        <span>Беседы</span><span>Истории студентов</span><span>Интервью</span><span class="on">Инструкция</span><span>Абсолютные списки</span>
+      </div>
+
+      <div class="split" style="margin-top:clamp(4rem,8vw,6rem)">
+        <div>
+          <span class="num-tag">Компонент Card</span>
+          <h3 class="h-m">Карточка отвечает на три вопроса</h3>
+          <p class="p">О чём статья? Какого формата? Кто автор? Достаточно, чтобы решить, стоит ли открывать.</p>
+          <ol class="anat">
+            <li><span><b>Обложка</b> — одинаковые пропорции, яркое пятно на нейтральном фоне</span></li>
+            <li><span><b>Теги-чипсы</b> — профессия и формат, отдельный компонент</span></li>
+            <li><span><b>Автор</b> — справа, вторичным серым</span></li>
+            <li><span><b>Заголовок</b> — Title 2, Medium 20/24</span></li>
+            <li><span><b>Лид</b> — Body 14/16.8, максимум три строки</span></li>
+          </ol>
+        </div>
+        <div class="split-media" style="background:#fff;border:1px solid #eee"><img src="img/journal-card.webp" alt="Карточка статьи" loading="lazy" style="box-shadow:none"></div>
+      </div>
+
+      <div class="split rev">
+        <div>
+          <span class="num-tag">Связь со школой</span>
+          <h3 class="h-m">Журнал — часть экосистемы</h3>
+          <p class="p">В шапке общая навигация школы: «Все курсы», «Бесплатно», «Дизайн-библиотека». От статьи до обучения — один клик. Заголовок страницы прямо говорит, зачем здесь журнал.</p>
+        </div>
+        <div class="split-media"><img src="img/journal-cover.webp" alt="Шапка журнала" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- DESIGN SYSTEM -->
+    <section class="slide reveal" style="background:#ECECEC">
+      <p class="eyebrow">04 — Дизайн-система</p>
+      <h2 class="h-l">Стили, на&nbsp;которых держится страница</h2>
+      <div class="palette-strips" style="--n:5">
+        <div class="strip"><div class="strip-color" style="background:#FFFFFF;border-bottom:1px solid #eee"></div><div class="strip-info"><p class="strip-name">White</p><p class="strip-hex">#FFFFFF</p><p class="strip-role">Фон</p></div></div>
+        <div class="strip"><div class="strip-color" style="background:#EFEFEF"></div><div class="strip-info"><p class="strip-name">Light Gray</p><p class="strip-hex">#EFEFEF</p><p class="strip-role">Теги</p></div></div>
+        <div class="strip"><div class="strip-color" style="background:#9A9A9A"></div><div class="strip-info"><p class="strip-name">Gray</p><p class="strip-hex">#9A9A9A</p><p class="strip-role">Автор, подписи</p></div></div>
+        <div class="strip"><div class="strip-color" style="background:#646464"></div><div class="strip-info"><p class="strip-name">Dark Gray</p><p class="strip-hex">#646464</p><p class="strip-role">Вторичный текст</p></div></div>
+        <div class="strip"><div class="strip-color" style="background:#3E3E3E"></div><div class="strip-info"><p class="strip-name">Black</p><p class="strip-hex">#3E3E3E</p><p class="strip-role">Текст, активный тег</p></div></div>
+      </div>
+      <div class="type-grid">
+        <div class="type-card dark">
+          <p class="type-aa">Aa</p>
+          <p class="type-name">Golos Text VF</p>
+          <p class="p">Один шрифт на всю страницу: вариативный гротеск с кириллицей, разные роли — за счёт начертаний и размеров.</p>
+        </div>
+        <div class="type-card type-scale">
+          <div><small>Header 1 · Bold 38/48</small><span style="font-size:clamp(1.6rem,3vw,2.4rem);font-weight:700">Журнал о профессиях</span></div>
+          <div><small>Header 2 · Bold 28/35</small><span style="font-size:1.75rem;font-weight:700">Популярное</span></div>
+          <div><small>Title 1 · DemiBold 22/28</small><span style="font-size:1.375rem;font-weight:600">Цветовые модели</span></div>
+          <div><small>Title 2 · Medium 20/24</small><span style="font-size:1.25rem;font-weight:500">Как разрешить спор и не поссориться</span></div>
+          <div><small>Body · 14/20 · 14/16.8 · 12/16</small><span style="font-size:0.875rem">Разбираемся, сколько зарабатывает моушн-дизайнер</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULT -->
+    <section class="slide slide--brand reveal">
+      <p class="eyebrow">05 — Итог</p>
+      <h2 class="h-l" style="max-width:18ch">Журнал, по&nbsp;которому удобно гулять</h2>
+      <div class="stats" style="--n:3">
+        <div class="stat"><b>12</b><span>тегов по профессиям и форматам вместо общей ленты</span></div>
+        <div class="stat"><b>9</b><span>текстовых стилей и 5 цветовых — основа системы</span></div>
+        <div class="stat"><b>2</b><span>компонента: карточка статьи и тег-чипс</span></div>
+      </div>
+    </section>
+
+    <!-- THANKS -->
+    <section class="slide slide--brand reveal">
+      <div class="thanks">
+        <div>
+          <h2 class="h-xl">Спасибо<br>за <em>просмотр</em></h2>
+          <p class="lead" style="margin-top:1.5rem">Нужно навести порядок в контенте и собрать дизайн-систему? Напишите — обсудим.</p>
+          <div class="author"><img src="img/foto.png" alt=""><div><b>Наталья Малинина</b><span>UX/UI-дизайнер</span></div></div>
+        </div>
+        <div class="thanks-links">
+          <a class="thanks-link" href="https://t.me/natali_m2" target="_blank" rel="noopener"><div><small>Telegram</small>@natali_m2</div><span>→</span></a>
+          <a class="thanks-link" href="case-flowers.html"><div><small>Предыдущий кейс</small>Цветочная мастерская «Теплица»</div><span>←</span></a>
+          <a class="thanks-link next" href="case-afisha.html"><div><small>Следующий кейс</small>Афиша Antalya Kültür Sanat</div><span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span class="footer-name">Малинина Наталья — UX/UI-дизайнер</span>
+    <span class="footer-copy">© 2026</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
