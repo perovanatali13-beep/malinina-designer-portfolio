@@ -101,18 +101,15 @@
     <!-- ANALOGS -->
     <section class="slide slide--white reveal">
       <p class="eyebrow">03 — Анализ аналогов</p>
-      <h2 class="h-l">Как ищут туры у&nbsp;других</h2>
-      <p class="p" style="max-width:60ch;margin-top:1rem">Изучила и сравнила похожие сервисы — агрегаторы туров и билетов. Смотрела, как устроены поиск, фильтры, выдача и карточка предложения, и отметила решения, которые помогают быстро выбрать.</p>
-      <div class="bento">
-        <div class="tile s6" style="background:var(--soft)">
-          <div class="shot zoom" style="--ratio:16 / 9"><img src="img/tours-ref-sletat.webp" alt="Референс: выдача туров Слетать.ру" loading="lazy"></div>
-          <p class="tile-t">Слетать.ру</p>
-          <p class="p">Карта рядом с выдачей, фото отеля, рейтинг и цена в одной карточке, фильтры по звёздности и питанию слева.</p>
-        </div>
-        <div class="tile s6" style="background:var(--soft)">
-          <div class="shot zoom" style="--ratio:16 / 9"><img src="img/tours-ref-aviasales.webp" alt="Референс: фильтры и выдача Авиасейлс" loading="lazy"></div>
-          <p class="tile-t">Авиасейлс</p>
-          <p class="p">Компактная форма поиска, понятные группы фильтров с ценой рядом, быстрый сброс, цены на соседние даты.</p>
+      <div class="about">
+        <h2 class="h-l">Как ищут туры у&nbsp;других</h2>
+        <div>
+          <p class="p">Изучила и сравнила похожие сервисы — агрегаторы туров и билетов. Смотрела, как устроены поиск, фильтры, выдача и карточка предложения.</p>
+          <ul class="bullets">
+            <li>Карта рядом с выдачей помогает оценить расположение отеля</li>
+            <li>Фото, рейтинг и цена в одной карточке ускоряют сравнение</li>
+            <li>Понятные группы фильтров и быстрый сброс экономят время</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -120,50 +117,22 @@
     <!-- UX DESIGN -->
     <section class="slide reveal">
       <p class="eyebrow">04 — Проектирование</p>
-      <h2 class="h-l">Кто покупает тур и&nbsp;как</h2>
-      <p class="p" style="max-width:60ch;margin-top:1rem">Спроектировала портрет пользователя, пользовательский сценарий, user stories и task flow — простой и детальный, с ветвлениями.</p>
-
-      <div class="split" style="margin-top:clamp(2.5rem,5vw,4rem)">
+      <div class="about">
+        <h2 class="h-l">Кто покупает тур и&nbsp;как</h2>
         <div>
-          <span class="num-tag">Портрет пользователя</span>
-          <h3 class="h-m">Елена, 39 лет, мама двоих детей</h3>
-          <p class="p">Руководитель отдела в банке. Ищет отель в Турции для всей семьи на начало мая с бюджетом до 400 000 ₽.</p>
-          <ul class="bullets">
-            <li>Нужен крытый или подогреваемый бассейн — в мае море ещё прохладное</li>
-            <li>Детский клуб для разных возрастов, чтобы отдохнуть с мужем вдвоём</li>
-            <li>Разнообразная кухня — прошлый отель разочаровал</li>
-            <li>Не доверяет обещаниям: «реальные условия отличаются в худшую сторону»</li>
-          </ul>
-        </div>
-        <div class="split-media zoom"><img src="img/tours-persona.webp" alt="Портрет пользователя: Елена" loading="lazy"></div>
-      </div>
-
-      <div class="bento" style="margin-top:clamp(3rem,6vw,5rem)">
-        <div class="tile s6">
-          <p class="num-tag" style="align-self:start">Пользовательский сценарий</p>
-          <p class="p" style="margin-top:0">В выходной Елена выбирает отель в Турции. Фильтрует туры: крытый бассейн и спа, детский клуб, «всё включено», рейтинг и цена. В списке смотрит описание, рейтинг и отзывы, добавляет понравившиеся варианты в избранное, сравнивает и покупает тур — и спокойно ждёт отпуска.</p>
-        </div>
-        <div class="tile s6">
-          <p class="num-tag" style="align-self:start">User stories</p>
-          <ul class="bullets" style="margin-top:0">
-            <li>Хочу купить лучший тур, чтобы хорошо отдохнуть всей семьёй</li>
-            <li>Хочу отфильтровать запрос, чтобы сократить число вариантов и время</li>
-            <li>Хочу читать отзывы, чтобы опираться на опыт других</li>
-            <li>Хочу сравнить подходящие варианты, чтобы не решать поспешно</li>
-          </ul>
+          <p class="p">Составила портрет пользователя: Елена, 39 лет, ищет отель в Турции для семьи с двумя детьми. Ей важны крытый бассейн, детский клуб, хорошая кухня и честные отзывы.</p>
+          <p class="p">Описала пользовательский сценарий и user stories: отфильтровать варианты, прочитать отзывы, сохранить понравившиеся в избранное, сравнить и спокойно купить тур.</p>
         </div>
       </div>
-
-      <div class="bento">
-        <div class="tile s6" style="background:var(--tint)">
-          <div class="shot zoom" style="--ratio:4 / 5"><img src="img/tours-taskflow.webp" alt="Task flow — основной путь" loading="lazy"></div>
-          <p class="tile-t">Task flow</p>
-          <p class="p">Основной путь: от входа на сайт через выбор направления, дат, фильтров и отеля — к оплате.</p>
+      <div class="split" style="margin-top:clamp(3rem,6vw,5rem)">
+        <div>
+          <span class="num-tag">Task flow</span>
+          <h3 class="h-m">Путь от входа на сайт до оплаты</h3>
+          <p class="p">Построила основной task flow и детальный — с развилками: известно ли направление и даты, нашёлся ли подходящий тур, нужно ли поменять фильтры.</p>
         </div>
-        <div class="tile s6" style="background:var(--tint)">
-          <div class="shot zoom" style="--ratio:4 / 5"><img src="img/tours-taskflow-detail.webp" alt="Task flow — детальный, с ветвлениями" loading="lazy"></div>
-          <p class="tile-t">Task flow детальный</p>
-          <p class="p">С развилками: известно ли направление и даты, есть ли подходящий тур, нужно ли менять фильтры.</p>
+        <div class="fan">
+          <figure class="fan-item zoom"><img src="img/tours-taskflow.webp" alt="Task flow — основной путь" loading="lazy"></figure>
+          <figure class="fan-item zoom"><img src="img/tours-taskflow-detail.webp" alt="Task flow — детальный, с развилками" loading="lazy"></figure>
         </div>
       </div>
     </section>
@@ -171,31 +140,27 @@
     <!-- LOW-FI -->
     <section class="slide slide--tint reveal">
       <p class="eyebrow">05 — Low-fi прототип</p>
-      <h2 class="h-l">Сначала логика, потом визуал</h2>
-      <p class="p" style="max-width:60ch;margin-top:1rem">Собрала low-fi прототип из 10 экранов: поиск, выдача и выбор тура на карте, страница отеля с отзывами и удобствами во всплывающем окне, избранное, подтверждение и оплаченный тур. На сером каркасе проверила порядок блоков до работы с цветом.</p>
-      <div class="lf-grid">
-        <figure><div class="shot zoom" style="--ratio:3 / 5"><img src="img/tours-lf-home.webp" alt="Low-fi: поиск тура" loading="lazy"></div><figcaption>Поиск тура</figcaption></figure>
-        <figure><div class="shot zoom" style="--ratio:3 / 5"><img src="img/tours-lf-list.webp" alt="Low-fi: выбор тура" loading="lazy"></div><figcaption>Выбор тура</figcaption></figure>
-        <figure><div class="shot zoom" style="--ratio:3 / 5"><img src="img/tours-lf-hotel.webp" alt="Low-fi: отель и отзывы" loading="lazy"></div><figcaption>Отель и отзывы</figcaption></figure>
-        <figure><div class="shot zoom" style="--ratio:3 / 5"><img src="img/tours-lf-pay.webp" alt="Low-fi: подтверждение оплаты" loading="lazy" style="object-fit:contain;object-position:top center"></div><figcaption>Подтверждение оплаты</figcaption></figure>
+      <div class="split">
+        <div>
+          <h2 class="h-l">Сначала логика, потом визуал</h2>
+          <p class="p" style="margin-top:1rem">Собрала low-fi прототип из 10 экранов: поиск, выдача и выбор тура на карте, страница отеля с отзывами, избранное, подтверждение и оплаченный тур. На сером каркасе проверила порядок блоков до работы с цветом.</p>
+        </div>
+        <div class="fan">
+          <figure class="fan-item zoom"><img src="img/tours-lf-home.webp" alt="Low-fi: поиск тура" loading="lazy"></figure>
+          <figure class="fan-item zoom"><img src="img/tours-lf-list.webp" alt="Low-fi: выбор тура" loading="lazy"></figure>
+          <figure class="fan-item zoom"><img src="img/tours-lf-hotel.webp" alt="Low-fi: отель и отзывы" loading="lazy"></figure>
+        </div>
       </div>
     </section>
 
     <!-- CONCEPT -->
     <section class="slide reveal">
       <p class="eyebrow">06 — Дизайн-концепция</p>
-      <h2 class="h-l">Adventure: яркое путешествие</h2>
-      <p class="p" style="max-width:60ch;margin-top:1rem">Собрала мудборд и дизайн-концепцию: яркие цвета, реальные фотографии, много воздуха, скруглённые формы и тонкие линии. Подобрала шрифт и контраст заголовков, расположение блоков, палитру и стиль иконок.</p>
-      <div class="bento">
-        <div class="tile s6" style="background:var(--soft)">
-          <div class="shot zoom" style="--ratio:4 / 5"><img src="img/tours-moodboard.webp" alt="Мудборд" loading="lazy"></div>
-          <p class="tile-t">Мудборд</p>
-          <p class="p">Референсы дизайна, иконки и иллюстрации, цветовая палитра и шрифт.</p>
-        </div>
-        <div class="tile s6" style="background:var(--soft)">
-          <div class="shot zoom" style="--ratio:4 / 5"><img src="img/tours-concept.webp" alt="Дизайн-концепция" loading="lazy"></div>
-          <p class="tile-t">Дизайн-концепция</p>
-          <p class="p">Шрифт и контраст, первые компоненты, расположение блоков и стиль, цвета, графика.</p>
+      <div class="about">
+        <h2 class="h-l">Adventure: яркое путешествие</h2>
+        <div>
+          <p class="p">Собрала мудборд и дизайн-концепцию. Настроение — яркие цвета, реальные фотографии, много воздуха, скруглённые формы и тонкие линии.</p>
+          <p class="p">Подобрала шрифт и контраст заголовков, расположение блоков, палитру и стиль иконок — эта основа легла в UI-кит и финальные экраны.</p>
         </div>
       </div>
     </section>

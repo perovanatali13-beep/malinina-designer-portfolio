@@ -868,3 +868,39 @@ body.lb-open { overflow: hidden; }
 .lf-grid figcaption { font-size: 0.8rem; color: var(--muted); margin-top: 0.75rem; text-align: center; }
 .tile .shot { margin-bottom: 0.5rem; border-radius: 12px; }
 @media (max-width: 1000px) { .lf-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* скриншоты веером рядом с текстом */
+.fan { position: relative; height: clamp(20rem, 38vw, 32rem); }
+
+.fan-item {
+  position: absolute;
+  top: 6%;
+  width: 46%;
+  aspect-ratio: 3 / 4;
+  margin: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 28px 50px -24px rgba(0, 0, 0, 0.45);
+  transition: transform 0.4s cubic-bezier(.2,.7,.2,1), z-index 0s;
+}
+
+.fan-item img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+.fan-item:hover { transform: rotate(0) translateY(-6px) scale(1.03); z-index: 5; }
+
+.fan-item:nth-child(1) { left: 2%; transform: rotate(-7deg); z-index: 1; }
+.fan-item:nth-child(2) { left: 27%; top: 0; transform: rotate(0deg); z-index: 2; }
+.fan-item:nth-child(3) { left: 52%; transform: rotate(7deg); z-index: 1; }
+
+/* два элемента — шире и симметрично */
+.fan:has(> .fan-item:nth-child(2):last-child) .fan-item { width: 52%; }
+.fan:has(> .fan-item:nth-child(2):last-child) .fan-item:nth-child(1) { left: 4%; transform: rotate(-5deg); }
+.fan:has(> .fan-item:nth-child(2):last-child) .fan-item:nth-child(2) { left: 42%; top: 8%; transform: rotate(5deg); }
+
+.fan-item .zoom-btn { width: 2.3rem; height: 2.3rem; font-size: 1.3rem; right: 0.7rem; bottom: 0.7rem; }
+
+@media (max-width: 640px) {
+  .fan { height: 19rem; }
+}
+
+.p + .p { margin-top: 1rem; }
