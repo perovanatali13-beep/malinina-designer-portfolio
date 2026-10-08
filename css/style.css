@@ -1070,3 +1070,25 @@ footer {
 @media (max-width: 768px) {
   .results--flow { grid-template-columns: 1fr 1fr; }
 }
+
+/* карточка кейса из двух скриншотов */
+.work-duo {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 4%;
+  padding: 6% 6% 0;
+  background: #F2ECE2;
+  align-items: start;
+}
+
+.work-duo img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.6);
+}
+
+.work-duo img + img { margin-top: 12%; }
