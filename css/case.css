@@ -861,3 +861,10 @@ body.lb-open { overflow: hidden; }
 }
 .wire-shot { background: #F4F4F4; margin-bottom: 0.5rem; }
 .ba-col .zoom-btn, .compare-col .zoom-btn { bottom: 0.85rem; right: 0.85rem; }
+
+/* low-fi экраны */
+.lf-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--gap); margin-top: 3rem; }
+.lf-grid .shot { border-radius: 12px; box-shadow: 0 20px 40px -25px rgba(0,0,0,0.35); }
+.lf-grid figcaption { font-size: 0.8rem; color: var(--muted); margin-top: 0.75rem; text-align: center; }
+.tile .shot { margin-bottom: 0.5rem; border-radius: 12px; }
+@media (max-width: 1000px) { .lf-grid { grid-template-columns: repeat(2, 1fr); } }

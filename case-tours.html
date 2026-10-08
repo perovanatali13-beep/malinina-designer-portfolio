@@ -63,7 +63,7 @@
       <div class="about">
         <h2 class="h-l">Горящий тур покупают быстро — каждый лишний шаг стоит продажи</h2>
         <div>
-          <div class="about-item"><p class="about-k">Задача</p><p class="p">Сделать редизайн веб-сервиса бронирования туров и спроектировать мобильную версию: от поиска до подтверждения оплаты.</p></div>
+          <div class="about-item"><p class="about-k">Задача</p><p class="p">Сделать редизайн веб-сервиса бронирования туров и спроектировать мобильную версию: от поиска до подтверждения оплаты. Перед дизайном — исследование, проектирование, low-fi прототип и дизайн-концепция.</p></div>
           <div class="about-item"><p class="about-k">Аудитория</p><p class="p">Люди, которые хотят уехать скоро и выгодно. Решение принимают быстро, часто — с телефона, сравнивая несколько отелей.</p></div>
           <div class="about-item"><p class="about-k">Идея</p><p class="p">Линейный сценарий: каждый экран отвечает на один вопрос пользователя и ведёт к следующему шагу. Красный — только для действий.</p></div>
         </div>
@@ -85,8 +85,9 @@
 
     <!-- AUDIT -->
     <section class="slide slide--tint reveal">
-      <p class="eyebrow">02 — UX-аудит</p>
+      <p class="eyebrow">02 — Исследование</p>
       <h2 class="h-l">Где ломается сценарий</h2>
+      <p class="p" style="max-width:60ch;margin-top:1rem">Перед разработкой провела оценку юзабилити текущего сервиса по чек-листу и прошла путь покупки тура глазами пользователя.</p>
       <div class="bento">
         <div class="tile"><p class="tile-num">01</p><p class="tile-t">Главная из текстовых списков</p><p class="p">Направления — строками без фото, треть экрана занимают адреса офисов. Вдохновиться и выбрать сложно.</p></div>
         <div class="tile"><p class="tile-num">02</p><p class="tile-t">Выдача-простыня</p><p class="p">Всего шесть фильтров, а в каждой карточке — длинный абзац «КРАТКО». Сравнить отели глазами почти невозможно.</p></div>
@@ -97,49 +98,111 @@
       </div>
     </section>
 
-    <!-- BEFORE / AFTER -->
+    <!-- ANALOGS -->
     <section class="slide slide--white reveal">
-      <p class="eyebrow">03 — Было и стало</p>
-      <h2 class="h-l">Исходный сайт и&nbsp;редизайн</h2>
-      <p class="p" style="max-width:60ch;margin-top:1rem;margin-bottom:clamp(2.5rem,5vw,4rem)">Слева — текущий сайт bankturov.ru (скриншоты от 8 октября 2026), справа — моя версия тех же экранов. Нажмите «+», чтобы рассмотреть страницу целиком.</p>
-      <div class="compare-row">
-        <h3 class="h-m">Главная</h3>
-        <div class="compare">
-          <div class="compare-col"><div class="compare-label"><span>Было</span><span>bankturov.ru</span></div><div class="shot zoom"><img src="img/orig-home.webp" alt="Главная bankturov.ru до редизайна" loading="lazy"></div></div>
-          <div class="compare-col"><div class="compare-label"><b>Стало</b><span>редизайн</span></div><div class="shot zoom"><img src="img/tours-home.webp" alt="Главная после редизайна" loading="lazy"></div></div>
+      <p class="eyebrow">03 — Анализ аналогов</p>
+      <h2 class="h-l">Как ищут туры у&nbsp;других</h2>
+      <p class="p" style="max-width:60ch;margin-top:1rem">Изучила и сравнила похожие сервисы — агрегаторы туров и билетов. Смотрела, как устроены поиск, фильтры, выдача и карточка предложения, и отметила решения, которые помогают быстро выбрать.</p>
+      <div class="bento">
+        <div class="tile s6" style="background:var(--soft)">
+          <div class="shot zoom" style="--ratio:16 / 9"><img src="img/tours-ref-sletat.webp" alt="Референс: выдача туров Слетать.ру" loading="lazy"></div>
+          <p class="tile-t">Слетать.ру</p>
+          <p class="p">Карта рядом с выдачей, фото отеля, рейтинг и цена в одной карточке, фильтры по звёздности и питанию слева.</p>
         </div>
-        <div class="compare-notes">
-          <div class="tile"><p class="tile-t">Было</p><p class="p">Форма поиска в красной шапке, ниже — горящие направления текстовыми строками и колонка с адресами офисов.</p></div>
-          <div class="tile tile--brand"><p class="tile-t">Стало</p><p class="p">Поиск на фото первого экрана, подборки направлений и отелей карточками с фото и ценой, блог и акции — ниже.</p></div>
-        </div>
-      </div>
-      <div class="compare-row">
-        <h3 class="h-m">Выдача и фильтры</h3>
-        <div class="compare">
-          <div class="compare-col"><div class="compare-label"><span>Было</span><span>bankturov.ru</span></div><div class="shot zoom"><img src="img/orig-search.webp" alt="Выдача bankturov.ru до редизайна" loading="lazy"></div></div>
-          <div class="compare-col"><div class="compare-label"><b>Стало</b><span>редизайн</span></div><div class="shot zoom"><img src="img/tours-filters.webp" alt="Выдача с фильтрами после редизайна" loading="lazy"></div></div>
-        </div>
-        <div class="compare-notes">
-          <div class="tile"><p class="tile-t">Было</p><p class="p">Шесть фильтров, длинное описание «КРАТКО» в каждой карточке, баннер и реклама внутри выдачи.</p></div>
-          <div class="tile tile--brand"><p class="tile-t">Стало</p><p class="p">10 групп фильтров, карта рядом с выдачей, компактная карточка: фото, рейтинг, число отзывов, цена и кнопка «Выбрать».</p></div>
+        <div class="tile s6" style="background:var(--soft)">
+          <div class="shot zoom" style="--ratio:16 / 9"><img src="img/tours-ref-aviasales.webp" alt="Референс: фильтры и выдача Авиасейлс" loading="lazy"></div>
+          <p class="tile-t">Авиасейлс</p>
+          <p class="p">Компактная форма поиска, понятные группы фильтров с ценой рядом, быстрый сброс, цены на соседние даты.</p>
         </div>
       </div>
-      <div class="compare-row">
-        <h3 class="h-m">Страница отеля</h3>
-        <div class="compare">
-          <div class="compare-col"><div class="compare-label"><span>Было</span><span>bankturov.ru</span></div><div class="shot zoom"><img src="img/orig-hotel.webp" alt="Страница отеля bankturov.ru до редизайна" loading="lazy"></div></div>
-          <div class="compare-col"><div class="compare-label"><b>Стало</b><span>редизайн</span></div><div class="shot zoom"><img src="img/tours-hotel.webp" alt="Страница отеля после редизайна" loading="lazy"></div></div>
+    </section>
+
+    <!-- UX DESIGN -->
+    <section class="slide reveal">
+      <p class="eyebrow">04 — Проектирование</p>
+      <h2 class="h-l">Кто покупает тур и&nbsp;как</h2>
+      <p class="p" style="max-width:60ch;margin-top:1rem">Спроектировала портрет пользователя, пользовательский сценарий, user stories и task flow — простой и детальный, с ветвлениями.</p>
+
+      <div class="split" style="margin-top:clamp(2.5rem,5vw,4rem)">
+        <div>
+          <span class="num-tag">Портрет пользователя</span>
+          <h3 class="h-m">Елена, 39 лет, мама двоих детей</h3>
+          <p class="p">Руководитель отдела в банке. Ищет отель в Турции для всей семьи на начало мая с бюджетом до 400 000 ₽.</p>
+          <ul class="bullets">
+            <li>Нужен крытый или подогреваемый бассейн — в мае море ещё прохладное</li>
+            <li>Детский клуб для разных возрастов, чтобы отдохнуть с мужем вдвоём</li>
+            <li>Разнообразная кухня — прошлый отель разочаровал</li>
+            <li>Не доверяет обещаниям: «реальные условия отличаются в худшую сторону»</li>
+          </ul>
         </div>
-        <div class="compare-notes">
-          <div class="tile"><p class="tile-t">Было</p><p class="p">Текстовое описание на весь экран, 12 свёрнутых разделов, номера и отзывы в самом низу, слева — офисы продаж.</p></div>
-          <div class="tile tile--brand"><p class="tile-t">Стало</p><p class="p">Ключевые условия под названием, удобства и время заезда отдельными блоками, номера карточками с ценой, отзывы с общей оценкой.</p></div>
+        <div class="split-media zoom"><img src="img/tours-persona.webp" alt="Портрет пользователя: Елена" loading="lazy"></div>
+      </div>
+
+      <div class="bento" style="margin-top:clamp(3rem,6vw,5rem)">
+        <div class="tile s6">
+          <p class="num-tag" style="align-self:start">Пользовательский сценарий</p>
+          <p class="p" style="margin-top:0">В выходной Елена выбирает отель в Турции. Фильтрует туры: крытый бассейн и спа, детский клуб, «всё включено», рейтинг и цена. В списке смотрит описание, рейтинг и отзывы, добавляет понравившиеся варианты в избранное, сравнивает и покупает тур — и спокойно ждёт отпуска.</p>
+        </div>
+        <div class="tile s6">
+          <p class="num-tag" style="align-self:start">User stories</p>
+          <ul class="bullets" style="margin-top:0">
+            <li>Хочу купить лучший тур, чтобы хорошо отдохнуть всей семьёй</li>
+            <li>Хочу отфильтровать запрос, чтобы сократить число вариантов и время</li>
+            <li>Хочу читать отзывы, чтобы опираться на опыт других</li>
+            <li>Хочу сравнить подходящие варианты, чтобы не решать поспешно</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bento">
+        <div class="tile s6" style="background:var(--tint)">
+          <div class="shot zoom" style="--ratio:4 / 5"><img src="img/tours-taskflow.webp" alt="Task flow — основной путь" loading="lazy"></div>
+          <p class="tile-t">Task flow</p>
+          <p class="p">Основной путь: от входа на сайт через выбор направления, дат, фильтров и отеля — к оплате.</p>
+        </div>
+        <div class="tile s6" style="background:var(--tint)">
+          <div class="shot zoom" style="--ratio:4 / 5"><img src="img/tours-taskflow-detail.webp" alt="Task flow — детальный, с ветвлениями" loading="lazy"></div>
+          <p class="tile-t">Task flow детальный</p>
+          <p class="p">С развилками: известно ли направление и даты, есть ли подходящий тур, нужно ли менять фильтры.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOW-FI -->
+    <section class="slide slide--tint reveal">
+      <p class="eyebrow">05 — Low-fi прототип</p>
+      <h2 class="h-l">Сначала логика, потом визуал</h2>
+      <p class="p" style="max-width:60ch;margin-top:1rem">Собрала low-fi прототип из 10 экранов: поиск, выдача и выбор тура на карте, страница отеля с отзывами и удобствами во всплывающем окне, избранное, подтверждение и оплаченный тур. На сером каркасе проверила порядок блоков до работы с цветом.</p>
+      <div class="lf-grid">
+        <figure><div class="shot zoom" style="--ratio:3 / 5"><img src="img/tours-lf-home.webp" alt="Low-fi: поиск тура" loading="lazy"></div><figcaption>Поиск тура</figcaption></figure>
+        <figure><div class="shot zoom" style="--ratio:3 / 5"><img src="img/tours-lf-list.webp" alt="Low-fi: выбор тура" loading="lazy"></div><figcaption>Выбор тура</figcaption></figure>
+        <figure><div class="shot zoom" style="--ratio:3 / 5"><img src="img/tours-lf-hotel.webp" alt="Low-fi: отель и отзывы" loading="lazy"></div><figcaption>Отель и отзывы</figcaption></figure>
+        <figure><div class="shot zoom" style="--ratio:3 / 5"><img src="img/tours-lf-pay.webp" alt="Low-fi: подтверждение оплаты" loading="lazy" style="object-fit:contain;object-position:top center"></div><figcaption>Подтверждение оплаты</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- CONCEPT -->
+    <section class="slide reveal">
+      <p class="eyebrow">06 — Дизайн-концепция</p>
+      <h2 class="h-l">Adventure: яркое путешествие</h2>
+      <p class="p" style="max-width:60ch;margin-top:1rem">Собрала мудборд и дизайн-концепцию: яркие цвета, реальные фотографии, много воздуха, скруглённые формы и тонкие линии. Подобрала шрифт и контраст заголовков, расположение блоков, палитру и стиль иконок.</p>
+      <div class="bento">
+        <div class="tile s6" style="background:var(--soft)">
+          <div class="shot zoom" style="--ratio:4 / 5"><img src="img/tours-moodboard.webp" alt="Мудборд" loading="lazy"></div>
+          <p class="tile-t">Мудборд</p>
+          <p class="p">Референсы дизайна, иконки и иллюстрации, цветовая палитра и шрифт.</p>
+        </div>
+        <div class="tile s6" style="background:var(--soft)">
+          <div class="shot zoom" style="--ratio:4 / 5"><img src="img/tours-concept.webp" alt="Дизайн-концепция" loading="lazy"></div>
+          <p class="tile-t">Дизайн-концепция</p>
+          <p class="p">Шрифт и контраст, первые компоненты, расположение блоков и стиль, цвета, графика.</p>
         </div>
       </div>
     </section>
 
     <!-- FLOW -->
     <section class="slide reveal">
-      <p class="eyebrow">04 — User flow</p>
+      <p class="eyebrow">07 — User flow</p>
       <h2 class="h-l">Пять шагов до отпуска</h2>
       <div class="scope" style="--steps:5">
         <div class="scope-step"><span class="scope-pill"><em>1</em>Поиск тура</span><p><b>Куда и когда?</b><br>Форма поиска и подборки</p></div>
@@ -157,7 +220,7 @@
 
     <!-- SOLUTIONS -->
     <section class="slide reveal">
-      <p class="eyebrow">05 — Решения</p>
+      <p class="eyebrow">08 — Решения</p>
       <h2 class="h-l" style="margin-bottom:clamp(3rem,6vw,5rem)">Что изменилось на&nbsp;каждом шаге</h2>
 
       <div class="split">
@@ -216,7 +279,7 @@
     <section class="slide slide--tint reveal">
       <div style="display:flex;justify-content:space-between;align-items:start;gap:1rem;flex-wrap:wrap">
         <div>
-          <p class="eyebrow">06 — Мобильная версия</p>
+          <p class="eyebrow">09 — Мобильная версия</p>
           <h2 class="h-l">Не уменьшенная копия, а&nbsp;свой сценарий</h2>
         </div>
         <span class="badge"><b>390</b>px frame</span>
@@ -237,7 +300,7 @@
 
     <!-- VISUAL -->
     <section class="slide reveal">
-      <p class="eyebrow">07 — Визуальный язык</p>
+      <p class="eyebrow">10 — Визуальный язык</p>
       <h2 class="h-l">Строгий интерфейс, один горячий акцент</h2>
       <p class="p" style="max-width:56ch;margin-top:1rem">Глубокий красный — цвет «горящего» предложения — только для действий и заголовков. Тёмные шапка и подвал собирают страницу в рамку, тёплый фон делает её мягче.</p>
       <div class="palette-strips" style="--n:4">
@@ -250,7 +313,7 @@
 
     <!-- RESULT -->
     <section class="slide slide--brand reveal">
-      <p class="eyebrow">08 — Итог</p>
+      <p class="eyebrow">11 — Итог</p>
       <h2 class="h-l" style="max-width:18ch">Понятный путь на&nbsp;любом устройстве</h2>
       <div class="stats" style="--n:3">
         <div class="stat"><b>10</b><span>экранов: 5 для десктопа и 5 для мобильной версии</span></div>
