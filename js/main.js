@@ -58,7 +58,8 @@ if (links.length) {
     btn.setAttribute('aria-label', 'Открыть увеличенное изображение');
     btn.textContent = '+';
     el.appendChild(btn);
-    const go = () => open(el.dataset.full || img.currentSrc || img.src, img.alt);
+    // в лайтбоксе — полный оригинал из src, а не уменьшенная копия из srcset
+    const go = () => open(el.dataset.full || img.getAttribute('src'), img.alt);
     btn.addEventListener('click', go);
     img.addEventListener('click', go);
   });
